@@ -1,6 +1,6 @@
 .DS_Store
 /node_modules/*
-!/node_modules/tinymce/plugins/media
+!/node_modules/tinymce/plugins/media/plugin.js
 dist/
 npm-debug.log*
 yarn-debug.log*
