@@ -158,6 +158,23 @@ export const constantRoutes = [
       }
     ]
   },
+  {
+    path: '/test',
+    component: Layout,
+    redirect: '/test/test',
+    name: 'test',
+    meta: {
+      title: 'test',
+      icon: 'nested'
+    },
+    children: [
+      {
+        path: 'test',
+        component: () => import('@/views/test/Test.vue'),
+        meta: { title: 'Test' }
+      }
+    ]
+  },
 
   // 404 page must be placed at the end !!!
   { path: '*', redirect: '/404', hidden: true }
